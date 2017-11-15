@@ -1,27 +1,58 @@
 # AngularReduxRouterTrial
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.8.
+This a trial project. The aim is to implement a basic web app with Angular 4,
+Redux (NgRx), (@Angular)Router and make it as complete and robust as possible.
 
-## Development server
+It should implement as much as possible of good practice, debuging tools and
+allow lazy-loading.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+**vincentperrin.com**
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technical notes
 
-## Build
+This project was generated with Angular CLI. Run `npm install -g angular-cli`
+to install it if necessary.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run `npm install` for the setup.
 
-## Running unit tests
+Run `ng serve` to start the server server, and navigate to `http://localhost:4200/`. 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## How this project was built
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Application base
 
-## Further help
+    ng new angular-redux-router-trial
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+    npm install @angular-devkit/schematics@0.0.34 // For Angular-CLI (if npm warning)
+
+
+### Redux (NgRx)
+
+    npm install @ngrx/store --save
+    npm install @ngrx/store-devtools --save
+
+
+###  Router
+
+    npm install @angular/router --save
+
+
+### Router - store binding
+
+    npm install @ngrx/router-store --save
+
+
+## Next
+
+ngrx store freeze, why is it necessary?
+
+check route guards
+
+use ngrx effects
+
+
+## Sources
+
+* https://github.com/ngrx/platform
