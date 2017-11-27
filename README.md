@@ -25,13 +25,16 @@ Run `ng serve` to start the server server, and navigate to `http://localhost:420
 
     ng new angular-redux-router-trial
 
+
+### Fixing package issues
+
     npm install @angular-devkit/schematics@0.0.34 // For Angular-CLI (if npm warning)
 
 Security issue with handlebars < 4.0.0: removed node_modules and upgraded Angular-CLI
 
     npm install --save-dev @angular/cli@1.5.3
     npm install
-    npm install @angular-devkit/schematics@0.0.37 // For Angular-CLI (if npm warning)
+    npm install webpack --save-dev
 
 
 ### Redux (NgRx)
