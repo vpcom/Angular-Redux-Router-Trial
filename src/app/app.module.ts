@@ -3,11 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-// redux
-import { StoreModule } from '@ngrx/store';
-import { counterReducer } from './store/home';
-import { counter2Reducer } from './store/second-page';
+// ngrx, store and reducers
+import { StoreModule, combineReducers } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { reducers } from './store';
 
 // router
 import { RouterModule } from '@angular/router';
@@ -16,7 +15,7 @@ import { SecondPageComponent } from './second-page/second-page.component';
 import { appRoutes } from './routes';
 
 // redux router binding
-import { StoreRouterConnectingModule, routerReducer, RouterStateSerializer } from '@ngrx/router-store';
+import { StoreRouterConnectingModule, RouterStateSerializer } from '@ngrx/router-store';
 import { CustomRouterStateSerializer } from './store/router';
 
 
@@ -28,10 +27,10 @@ import { CustomRouterStateSerializer } from './store/router';
   ],
   imports: [
     BrowserModule,
-    StoreModule.forRoot({ routerReducer: routerReducer, counter: counterReducer, counter2: counter2Reducer}),
+    StoreModule.forRoot(reducers), // add met reducers here
     StoreDevtoolsModule.instrument(),
     RouterModule.forRoot(appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      { enableTracing: true } // debugging purposes only
     ),
     StoreRouterConnectingModule
   ],

@@ -19,8 +19,8 @@ export class SecondPageComponent implements OnInit {
 
   ngOnInit() {
   }
-  
-    
+
+
   increment2() {
     this.store.dispatch({type: 'INCREMENT2'});
 
