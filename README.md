@@ -53,5 +53,4 @@ Showcase route guards.
 Study @ngrx/effects.
 https://medium.com/@flashMasterJim/the-basics-of-ngrx-effects-effect-and-async-middleware-for-ngrx-store-in-angular-2-f25587493329
 
-It should implement as much as possible of good practice, be a good use case for using debuging tools and
-allow **lazy-loading**.
+It should implement as much as possible of **good practices**, be a good use case for using debuging tools and allow **lazy-loading**.
