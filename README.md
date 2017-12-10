@@ -1,10 +1,6 @@
 # AngularReduxRouterTrial
 
-This a trial project. The aim is to implement a basic web app with Angular 4,
-Redux (NgRx), (@Angular)Router and make it as complete and robust as possible.
-
-It should implement as much as possible of good practice, debuging tools and
-allow lazy-loading.
+This a trial project aimed at implementing a basic web app with Angular 4, Redux (NgRx), (@Angular)Router.
 
 **vincentperrin.com**
 
@@ -28,12 +24,6 @@ Run `ng serve` to start the server server, and navigate to `http://localhost:420
 
 ### Fixing package issues
 
-    npm install @angular-devkit/schematics@0.0.34 // For Angular-CLI (if npm warning)
-
-Security issue with handlebars < 4.0.0: removed node_modules and upgraded Angular-CLI
-
-    npm install --save-dev @angular/cli@1.5.3
-    npm install
     npm install webpack --save-dev
 
 
@@ -53,15 +43,15 @@ Security issue with handlebars < 4.0.0: removed node_modules and upgraded Angula
     npm install @ngrx/router-store --save
 
 
-## Next
+## Next, todo
 
-ngrx store freeze, why is it necessary?
+use ngrx store freeze and prove it's utility by violating the state immutability.
+See https://angular-2-training-book.rangle.io/handout/change-detection/enforcing_immutability.html
 
-check route guards
+Showcase route guards.
 
-use ngrx effects
+Study @ngrx/effects.
+https://medium.com/@flashMasterJim/the-basics-of-ngrx-effects-effect-and-async-middleware-for-ngrx-store-in-angular-2-f25587493329
 
-
-## Sources
-
-* https://github.com/ngrx/platform
+It should implement as much as possible of good practice, be a good use case for using debuging tools and
+allow **lazy-loading**.
